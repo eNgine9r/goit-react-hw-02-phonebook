@@ -1,0 +1,15 @@
+.contactForm{
+    background-color: aquamarine;
+}
+
+.contactForm__name{
+background-color: bisque;
+}
+
+.contactForm__number{
+background-color: blue;
+}
+
+.contactForm__button{
+    background-color: blanchedalmond;
+}
