@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid'
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
@@ -42,10 +41,6 @@ export class App extends Component {
     }));
   };
 
-  formSubmitHandler = data => {
-    this.addContact(data);
-  };
-
   changeFilter = e => {
     this.setState({ filter: e.currentTarget.value });
   };
@@ -80,15 +75,4 @@ export class App extends Component {
       </div>
     );
   };
-};
-
-App.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.number.isRequired,
-    }),
-  ),
-  filter: PropTypes.string,
 };
