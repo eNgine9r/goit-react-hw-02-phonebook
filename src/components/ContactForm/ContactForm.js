@@ -43,9 +43,9 @@ import css from './ContactForm.module.css';
 
       return (
         <form className={css.contactForm} onSubmit={this.handleSubmit}>
-          <div className={css.contactForm__name}>
-            <label htmlFor={this.nameInputId}>Name<br/></label>
-            <input
+          <div className={css.contactForm__group}>
+            <label htmlFor={this.nameInputId} className={css.contactForm_text}>Name<br/></label>
+            <input className={css.contactForm_input}
               type="text"
               id={this.nameInputId}
               name="name"
@@ -57,8 +57,8 @@ import css from './ContactForm.module.css';
             />
           </div>
           <div className={css.contactForm__number}>
-            <label htmlFor={this.numberInputId}>Number<br/></label>
-            <input
+            <label htmlFor={this.numberInputId} className={css.contactForm_text}>Number<br/></label>
+            <input className={css.contactForm_input}
               type="tel"
               id={this.numberInputId}
               name="number"

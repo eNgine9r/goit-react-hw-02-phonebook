@@ -67,10 +67,10 @@ export class App extends Component {
 
     return (
       <div className={css.counteiner}>
-        <h1>Phonebook</h1>
+        <h1 className={css.counteiner__title}>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
 
-        <h2>Contacts</h2>
+        <h2 className={css.counteiner__title}>Contacts</h2>
         <Filter
           value={filter}
           onChange={this.changeFilter} />
